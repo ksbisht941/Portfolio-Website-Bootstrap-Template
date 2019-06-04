@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+/*--- navigation ---*/
+#navigation{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: -20px;
+}
+
+#navigation .navbar-brand img{
+    height: 30px;
+    padding-left: 30px;
+}
+
+#navigation .navbar-nav li{
+    padding: 0 10px;
+}
+
+#navigation .navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#navigation ul li a:hover{
+    color: #007bff!important;
+}
+
+#navigation .navbar{
+    background: #fff;
+}
+
+#navigation .navbar-toggler{
+    border: none !important;
+}
+
+#navigation .nav-link{
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*--- home ---*/
+#home{
+    background: url(img/pic01.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+#home .container{
+    height: 100vh;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#home p{
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 500;
+}
+
+#home .social{
+    float: left;
+}
+
+#home .social .fa{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+/*--- about ---*/
+#about .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about .about-box{
+    box-shadow: 0 0 0 15px rgba(221, 110, 6)inset;
+    margin-right: 0;
+    margin-top: 30px;
+    position: relative;
+    display: block;
+}
+
+#about .box-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5s;
+    z-index: 3;
+    transform: translateY(30px) translateX(-30px);
+}
+
+#about .about-box .folio-image{
+    position: relative;
+}
+
+#about .about-box .folio-image img{
+    transform: translateY(30px) translateX(-30px);
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+}
+
+#about .row .about-content{
+    margin-top: 80px;
+    color: grey;
+    font-weight: 200;
+}
+
+#about .row .content-header{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif';
+}
+
+#about .row .content-body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 980px){
+    .about-box{
+        height: 400px;
+        margin-left: 30px;
+    }
+}
+
+/*--- portfolio ---*/
+#portfolio .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#portfolio .container .gallary{
+    margin-top: 40px;
+}
+
+#portfolio .container img{
+    height: 250px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/*--- blog ---*/
+#blog{
+    background: #efefef;
+}
+
+#blog .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#blog .row img{
+    margin-top: 30px;
+    height: 250px;
+    cursor: pointer;
+}
+
+#blog .row .blog-headline{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#blog .row .blog-headline:hover{
+    color: grey;
+}
+
+#blog .row .blog-para{
+    color: grey;
+    font-size: 15px;
+}
+
+/*--- contact ---*/
+#contact{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contact .contact-form h2{
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+}
+
+#contact .contact-form .contact-detail{
+    list-style: none;
+    color: grey;
+    margin-top: 30px;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+
+#contact .form-group #contact-input{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+    font-weight: 300;
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+#contact .form-group textarea{
+    height: 150px;
+}
+
+#contact .form-group .btn{
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    text-decoration: none;
+}
+
+/* footer */
+#footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#footer .fa-heart-o{
+    margin: 3px;
+    color: red;
+}
